@@ -703,16 +703,17 @@ a.logo-link {
 
 .ecommerce-works {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+
   justify-content: space-between;
-  row-gap: 2.5rem;
+  row-gap: 2.5rem; */
 
   width: 100%;
-  min-height: 70vh;
+  /* min-height: 70vh; */
+  max-height: calc(100vh - 6rem);
   padding-inline: clamp(2rem, 4vw, 8rem);
-  padding-block: clamp(2rem, 6vh, 8rem);
+  padding-top: clamp(2rem, 6vh, 8rem);
 
   overflow: hidden;
 
@@ -721,10 +722,13 @@ a.logo-link {
 
 @media screen and (min-width: 62.5em) {
   .ecommerce-works {
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     row-gap: 0;
 
-    padding-block: 0;
+    padding-top: 0;
     max-height: calc(100vh - 6rem);
   }
 }
@@ -736,13 +740,13 @@ a.logo-link {
   flex-direction: column;
   justify-content: center;
   row-gap: 2.5rem;
-
-  /* padding: 0 1.5rem; */
+  margin-bottom: 2.5rem;
 }
 
 @media screen and (min-width: 62.5em) {
   .ecommerce-works__text-wrapper {
     flex-basis: 35%;
+    margin-bottom: 0;
   }
 }
 
@@ -824,7 +828,7 @@ a.logo-link {
 
 @media screen and (min-width: 62.5em) {
   .ecommerce-works__mobile-wrapper.slide-in {
-    transform: translateY(25%);
+    transform: translateY(20%);
   }
 }
 
@@ -864,33 +868,16 @@ a.logo-link {
 }
 
 .ecommerce-works__ad-img {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-
   display: none;
 
   width: 100%;
 
-  /* opacity: 0; */
   object-fit: cover;
-
-  /* transition: opacity 0.3s ease-in-out 0s; */
-  /* animation: spin 40s infinite linear; */
 }
 
 .ecommerce-works__ad-img.active {
   display: block;
   /* opacity: 1; */
-}
-
-@keyframes spin {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-100%);
-  }
 }
 
 /* ========= graphic-works 商業廣告 樣式設定 ========= */
