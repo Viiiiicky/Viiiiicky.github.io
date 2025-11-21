@@ -12,6 +12,8 @@ const indicatorsWrapper = document.querySelector(
 );
 const indicators = Array.from(indicatorsWrapper.children);
 
+const mediaQuery = window.matchMedia("(min-width: 62.5em)");
+
 // 預設索引值為第一張
 let currentIndex = 0;
 // 確認輪播卡片數量，判斷式若超過此範圍則回到最前/最後一張
@@ -28,13 +30,28 @@ function goToSlide(targetIndex) {
   }
 
   // 清除指示點的啟用狀態，避免重複套用
-  indicators.forEach((indicator) => indicator.classList.remove("active"));
+  if (indicators[currentIndex]) {
+    indicators[currentIndex].classList.remove("active");
+  }
 
-  // 計算移動到指定卡片的距離
-  const moveVW = -50 * newIndex;
-  const moveREM = -5 * newIndex;
-  // 讓50vw寬的卡片能在畫面置中，需要向左位移25vw距離
-  const offsetVW = moveVW + 25;
+  let moveVW;
+  let moveREM;
+  let offsetVW;
+
+  // 大螢幕&小螢幕應用不同位移數值
+  if (mediaQuery.matches) {
+    // 計算移動到指定卡片的距離
+    moveVW = -50 * newIndex;
+    moveREM = -5 * newIndex;
+    // 讓50vw寬的卡片能在畫面置中，需要向左位移25vw距離
+    offsetVW = moveVW + 25;
+  } else {
+    // 計算移動到指定卡片的距離
+    moveVW = -70 * newIndex;
+    moveREM = -5 * newIndex;
+    // 讓70vw寬的卡片能在畫面置中，需要向左位移15vw距離
+    offsetVW = moveVW + 15;
+  }
 
   let offset = `${offsetVW}vw + ${moveREM}rem`;
   worksWrapper.style.transform = `translateX(calc(${offset}))`;
@@ -71,6 +88,14 @@ indicatorsWrapper.addEventListener("click", (event) => {
     goToSlide(targetIndex);
   }
 });
+
+// 控制不同尺寸下選單是否摺疊
+function handleScreenChange(event) {
+  goToSlide(currentIndex);
+}
+
+// 監聽視窗尺寸以應用對應的滑動距離
+mediaQuery.addEventListener("change", handleScreenChange);
 
 // 網頁載入後啟用預設的卡片及指示點
 goToSlide(currentIndex);

@@ -33,12 +33,6 @@ html {
   scroll-padding: 6rem;
 }
 
-/* @media screen and (min-width: 62.5em) {
-  html {
-    font-size: 62.5%;
-  }
-} */
-
 body {
   width: 100%;
   max-width: 100%;
@@ -218,13 +212,16 @@ a.logo-link {
   }
 }
 
+.navbar__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar__list-link {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  height: 100%;
-  /* padding: 0 1.5rem; */
 
   transition: color 0.3s ease-in-out 0s;
 }
@@ -257,8 +254,9 @@ a.logo-link {
   flex-direction: column;
 
   width: 100%;
-  min-height: 70vh;
+  min-height: calc(100vh - 6rem);
   padding-inline: clamp(2rem, 4vw, 8rem);
+  padding-block: 3rem;
 
   color: var(--color-white);
   background-color: var(--color-dark-gray);
@@ -266,31 +264,21 @@ a.logo-link {
 
 @media screen and (min-width: 62.5em) {
   .header {
-    /* display: flex; */
     flex-direction: row;
 
-    min-height: calc(100vh - 6rem);
-
-    /* width: 100%;
-    min-height: calc(100vh - 6rem);
-    padding-inline: clamp(2rem, 4vw, 8rem);
-
-    color: var(--color-light-gray);
-    background-color: var(--color-dark-gray); */
+    padding-block: 0;
   }
 }
 
 .header__left-column {
-  /* flex-basis: 70%;
-  flex-shrink: 0; */
-
+  flex-basis: 100%;
   flex-grow: 1;
 
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   /* row-gap: clamp(2rem, 3vh, 5rem); */
-  row-gap: 2rem;
+  /* row-gap: 2rem; */
 
   position: relative;
   z-index: 2;
@@ -302,14 +290,7 @@ a.logo-link {
     flex-shrink: 0;
     flex-grow: 0;
 
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-start; */
-    row-gap: 0;
-    /* row-gap: clamp(2rem, 3vh, 5rem); */
-
-    /* position: relative;
-    z-index: 2; */
+    /* row-gap: 0; */
   }
 }
 
@@ -319,9 +300,9 @@ a.logo-link {
   align-items: flex-start;
   row-gap: 1.5rem;
 
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
 
-  text-shadow: 1px 1px 5px var(--color-raven);
+  text-shadow: 1px 1px 3px var(--color-raven);
 }
 
 @media screen and (min-width: 62.5em) {
@@ -347,17 +328,21 @@ a.logo-link {
 }
 
 .hero__link-wrapper {
+  align-self: center;
+
   display: flex;
   column-gap: 3rem;
 
   margin-top: auto;
-  margin-bottom: 5rem;
+  /* margin-bottom: 5rem; */
 
   transition-delay: 0.5s;
 }
 
 @media screen and (min-width: 62.5em) {
   .hero__link-wrapper {
+    align-self: flex-start;
+
     margin-bottom: clamp(3rem, 10vh, 10vh);
   }
 }
@@ -446,19 +431,17 @@ a.logo-link {
   display: flex;
   flex-direction: column;
   row-gap: 3rem;
+
+  margin: auto;
 }
 
 @media screen and (min-width: 62.5em) {
   .web-works__wrapper {
-    display: flex;
     flex-direction: row;
     row-gap: 0;
     column-gap: 3rem;
 
-    margin: auto;
-
     height: 60vh;
-    /* padding: 0 1.5rem; */
   }
 }
 
@@ -610,16 +593,14 @@ a.logo-link {
 }
 
 .graphic-works__card-wrapper {
-  flex-basis: 75vw;
+  flex-basis: 70vw;
   flex-shrink: 0;
 
   display: flex;
   flex-direction: column;
   row-gap: 1rem;
 
-  height: 60vh;
-
-  /* transition: box-shadow 0.3s ease-in-out 0s; */
+  min-height: 60vh;
 }
 
 @media screen and (min-width: 62.5em) {
@@ -633,15 +614,6 @@ a.logo-link {
     column-gap: 1rem;
 
     height: 60vh;
-
-    /* transition: box-shadow 0.3s ease-in-out 0s; */
-  }
-}
-
-@media screen and (min-width: 62.5em) {
-  .graphic-works__work,
-  .graphic-works__info {
-    flex-basis: 50%;
   }
 }
 
@@ -665,19 +637,36 @@ a.logo-link {
   justify-content: flex-end;
   row-gap: 1rem;
 
-  padding: 3rem 2rem;
+  padding: 1.5rem;
   border-radius: 2rem;
+}
 
-  overflow: hidden;
+@media screen and (min-width: 62.5em) {
+  .graphic-works__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    row-gap: 1rem;
+
+    padding: 3rem 2rem;
+    border-radius: 2rem;
+  }
+}
+
+@media screen and (min-width: 62.5em) {
+  .graphic-works__work,
+  .graphic-works__info {
+    flex-basis: 50%;
+  }
 }
 
 .graphic-works__project-name {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 400;
 }
 
 .graphic-works__description {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 
   color: var(--color-semi-dark-gray);
 }
