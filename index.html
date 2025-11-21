@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./assets/images/favicon.svg"
+      type="image/png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>蔡文琪 | 個人網站</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="navbar__list outer-list-wrapper">
+        <li class="navbar__list-item">
+          <a href="#header" class="navbar__list-link logo-link">Vicky</a>
+        </li>
+        <li class="navbar__list-item menu-list-item">
+          <a href="#" class="navbar__list-link menu-link"
+            ><img
+              class="navbar__menu-icon"
+              src="./assets/images/icon_menu.svg"
+              alt="選單按鈕" />
+            <img
+              class="navbar__close-icon"
+              src="./assets/images/icon_close.svg"
+              alt="關閉選單按鈕"
+          /></a>
+        </li>
+        <ul class="navbar__list inner-list-wrapper">
+          <li class="navbar__list-item">
+            <a href="#web-works" class="navbar__list-link">網頁設計</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="#graphic-works" class="navbar__list-link">平面設計</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="#work-experience" class="navbar__list-link">工作經歷</a>
+          </li>
+          <li class="navbar__list-item">
+            <a href="#about-me" class="navbar__list-link">關於我</a>
+          </li>
+        </ul>
+      </ul>
+    </nav>
+    <div class="scroll-progressbar"></div>
+    <header class="header" id="header">
+      <div class="header__left-column">
+        <div class="hero__text-wrapper">
+          <p class="hero__intro-text">嗨，我是</p>
+          <h1 class="hero__title">蔡文琪</h1>
+          <p class="hero__intro-text">
+            是一名平面設計師。<br />正在自學網頁設計，並尋找相關的工作機會。
+          </p>
+        </div>
+        <div class="hero__link-wrapper fade-in">
+          <a class="hero__link" href="#web-works">先看看作品</a>
+          <a class="hero__link" href="#work-experience">先了解經歷</a>
+        </div>
+      </div>
+      <div class="header__right-column">
+        <img class="fade-in" src="./assets/images/hero_portrait.jpg" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="web-works" id="web-works">
+        <h2 class="web-works__title fade-in">網頁設計作品</h2>
+        <div class="web-works__wrapper">
+          <a
+            href="https://viiiiicky.github.io/Clone/"
+            class="web-works__link"
+            target="_blank"
+            ><div class="web-works__card">
+              <img
+                class="web-works__thumbnail"
+                src="./assets/images/web-works__porsche.png"
+                alt="網頁設計作品縮圖"
+              />
+              <video class="web-works__teaser" loop muted playsinline>
+                <source
+                  src="./assets/video/web-works__clone.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="web-works__info">
+                <ul class="web-works__tag-list">
+                  <li class="web-works__tag">HTML</li>
+                  <li class="web-works__tag">CSS</li>
+                  <li class="web-works__tag">JavaScript</li>
+                </ul>
+                <p class="web-works__project-name">保時捷首頁仿作</p>
+              </div>
+            </div></a
+          >
+          <a
+            href="https://viiiiicky.github.io/Weather/"
+            class="web-works__link"
+            target="_blank"
+            ><div class="web-works__card">
+              <img
+                class="web-works__thumbnail"
+                src="./assets/images/web-works__weather.png"
+                alt="網頁設計作品縮圖"
+              />
+              <video class="web-works__teaser" loop muted playsinline>
+                <source
+                  src="./assets/video/web-works__weather.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <div class="web-works__info">
+                <ul class="web-works__tag-list">
+                  <li class="web-works__tag">React</li>
+                  <li class="web-works__tag">API</li>
+                </ul>
+                <p class="web-works__project-name">即時天氣查詢</p>
+              </div>
+            </div></a
+          >
+        </div>
+      </section>
+      <section class="graphic-works" id="graphic-works">
+        <h2 class="graphic-works__title fade-in">平面設計作品</h2>
+        <div class="graphic-works__arrows-wrapper">
+          <button class="graphic-works__button prev">
+            <img
+              class="graphic-works__btn-img left-arrow"
+              src="./assets/images/icon_arrow-left.svg"
+              alt="control button to previous"
+            />
+          </button>
+          <button class="graphic-works__button next">
+            <img
+              class="graphic-works__btn-img right-arrow"
+              src="./assets/images/icon_arrow-right.svg"
+              alt="control button to next"
+            />
+          </button>
+        </div>
+        <div class="graphic-works__wrapper">
+          <div class="graphic-works__card-wrapper">
+            <div class="graphic-works__work">
+              <img
+                class="graphic-works__work-img"
+                src="./assets/images/graphic-works__clear-and-bright.jpg"
+                alt="平面設計作品 節氣-清明"
+              />
+            </div>
+            <div class="graphic-works__info">
+              <p class="graphic-works__project-name">清明</p>
+              <p class="graphic-works__description">
+                春季節氣之一。<br />氣溫逐漸回暖，草木發新芽、萬物蓬勃生長，此時的天氣清和而明朗。
+              </p>
+            </div>
+          </div>
+          <div class="graphic-works__card-wrapper">
+            <div class="graphic-works__work">
+              <img
+                class="graphic-works__work-img"
+                src="./assets/images/graphic-works__grain-in-ear.jpg"
+                alt="平面設計作品 節氣-芒種"
+              />
+            </div>
+            <div class="graphic-works__info">
+              <p class="graphic-works__project-name">芒種</p>
+              <p class="graphic-works__description">
+                夏季節氣之一。<br />此時氣溫升高、且有充足的陽光促
+                進農作物茁長。春季的作物已經可以採收，接著準備夏季作物的種植。
+              </p>
+            </div>
+          </div>
+          <div class="graphic-works__card-wrapper">
+            <div class="graphic-works__work">
+              <img
+                class="graphic-works__work-img"
+                src="./assets/images/graphic-works__frost-descent.jpg"
+                alt="平面設計作品 節氣-霜降"
+              />
+            </div>
+            <div class="graphic-works__info">
+              <p class="graphic-works__project-name">霜降</p>
+              <p class="graphic-works__description">
+                秋季節氣之一。<br />天氣微涼，此時是秋季過渡至冬季的時節，靠近地表的水氣會凝華成霜。
+              </p>
+            </div>
+          </div>
+          <div class="graphic-works__card-wrapper">
+            <div class="graphic-works__work">
+              <img
+                class="graphic-works__work-img"
+                src="./assets/images/graphic-works__minor-cold.jpg"
+                alt="平面設計作品 節氣-小寒"
+              />
+            </div>
+            <div class="graphic-works__info">
+              <p class="graphic-works__project-name">小寒</p>
+              <p class="graphic-works__description">
+                冬季節氣之一。<br />小寒揭開了冬季的帷幕，在此之後天氣會漸漸變得寒冷。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="graphic-works__indicators-wrapper">
+          <button class="graphic-works__indicator"></button>
+          <button class="graphic-works__indicator"></button>
+          <button class="graphic-works__indicator"></button>
+          <button class="graphic-works__indicator"></button>
+        </div>
+      </section>
+      <section class="ecommerce-works">
+        <div class="ecommerce-works__text-wrapper">
+          <h3 class="ecommerce-works__title">電商廣告</h3>
+
+          <ul class="ecommerce-works__list">
+            <li class="ecommerce-works__list-item">
+              <a class="ecommerce-works__project-link" href="#">
+                <p class="ecommerce-works__project-type">兒童玩具</p>
+                <p class="ecommerce-works__project-info">
+                  運用大量實際使用照片及產品細節介紹，讓家長能夠快速、清楚地了解產品特性。
+                </p>
+              </a>
+            </li>
+            <li class="ecommerce-works__list-item">
+              <a class="ecommerce-works__project-link" href="#">
+                <p class="ecommerce-works__project-type">農機配件</p>
+                <p class="ecommerce-works__project-info">
+                  重點條列使用者對這類產品的需求－－照明性能、防水防塵、耐強烈衝擊。
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="ecommerce-works__mobile-wrapper">
+          <div class="ecommerce-works__mobile-screen">
+            <div class="ecommerce-works__ad-content">
+              <img
+                src="./assets/images/graphic-works__e-commerce-01.jpg"
+                class="ecommerce-works__ad-img"
+                alt="電商廣告圖片"
+              />
+              <img
+                src="./assets/images/graphic-works__e-commerce-02.jpg"
+                class="ecommerce-works__ad-img"
+                alt="電商廣告圖片"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="graphic-works-flyer">
+        <div class="flyer__text-wrapper">
+          <h3 class="flyer__title">商業廣告</h3>
+          <ul class="flyer__list">
+            <li class="flyer__list-item">
+              <a class="flyer__project-link" href="#">
+                <p class="flyer__project-type">資訊</p>
+                <p class="flyer__project-info">
+                  以創作者為目標客群的筆記型電腦，多層次的背景色搭配繽紛的前景，強調產品的畫面表現細膩。
+                </p>
+              </a>
+            </li>
+
+            <li class="flyer__list-item">
+              <a class="flyer__project-link" href="#">
+                <p class="flyer__project-type">飲食</p>
+                <p class="flyer__project-info">
+                  以甜蜜草莓季為主題，使用柔和且關聯性高的粉色為主色調，推廣季節限定的飲料及甜品。
+                </p>
+              </a>
+            </li>
+
+            <li class="flyer__list-item">
+              <a class="flyer__project-link" href="#">
+                <p class="flyer__project-type">美妝</p>
+                <p class="flyer__project-info">
+                  以防曬乳液為廣告產品，採用與夏季相關的清爽配色，重點列出產品適用情境及有效成分。
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="flyers-wrapper">
+          <div class="flyers-wrapper__flyer top-flyer">
+            <img
+              class="flyers-wrapper__flyer-img"
+              src="./assets/images/graphic-works__flyer-01.png"
+              alt="商業廣告"
+            />
+          </div>
+          <div class="flyers-wrapper__flyer mid-flyer">
+            <img
+              class="flyers-wrapper__flyer-img"
+              src="./assets/images/graphic-works__flyer-02.png"
+              alt="商業廣告"
+            />
+          </div>
+
+          <div class="flyers-wrapper__flyer bottom-flyer">
+            <img
+              class="flyers-wrapper__flyer-img"
+              src="./assets/images/graphic-works__flyer-03.png"
+              alt="商業廣告"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="work-experience" id="work-experience">
+        <h2 class="work-experience__title fade-in">工作經歷</h2>
+        <ul class="work-experience__list">
+          <li class="work-experience__list-item">
+            <div class="work-experience__job-info">
+              <p class="work-experience__position">廠務人員</p>
+              <p class="work-experience__company">利勤實業有限公司</p>
+              <p class="work-experience__duration">2025/5 － 2025/8</p>
+            </div>
+            <div class="work-experience__job-description">
+              <ul class="work-experience__content-list">
+                <li class="work-experience__content">追蹤生產排程並跟催</li>
+                <li class="work-experience__content">彙整及分析異常生產歷程</li>
+                <li class="work-experience__content">製程改善專案進度跟催</li>
+                <li class="work-experience__content">
+                  例行會議邀約、主持及彙整
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="work-experience__list-item">
+            <div class="work-experience__job-info">
+              <p class="work-experience__position">行銷暨售服專員</p>
+              <p class="work-experience__company">華科國際有限公司</p>
+              <p class="work-experience__duration">2024/3 － 2025/4</p>
+            </div>
+            <div class="work-experience__job-description">
+              <ul class="work-experience__content-list">
+                <li class="work-experience__content">農機展及動態巡迴展策展</li>
+                <li class="work-experience__content">實體及電子文宣設計</li>
+                <li class="work-experience__content">新官網內容規劃及協作</li>
+                <li class="work-experience__content">電商平台維護及廣告設計</li>
+                <li class="work-experience__content">顧客關係管理及售服支援</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="work-experience__list-item">
+            <div class="work-experience__job-info">
+              <p class="work-experience__position">平面設計師</p>
+              <p class="work-experience__company">程泰機械股份有限公司</p>
+              <p class="work-experience__duration">2021/7 － 2023/4</p>
+            </div>
+            <div class="work-experience__job-description">
+              <ul class="work-experience__content-list">
+                <li class="work-experience__content">產品型錄維護及製作</li>
+                <li class="work-experience__content">國內外廣告文宣製作</li>
+                <li class="work-experience__content">工具機展策展及協辦</li>
+                <li class="work-experience__content">年節公關品設計及採購</li>
+                <li class="work-experience__content">
+                  產品攝影規劃及跨部門協商
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="about-me" id="about-me">
+        <div class="about-me__text-wrapper">
+          <div class="about-me__title-wrapper">
+            <h3 class="about-me__name">蔡文琪</h3>
+            <p class="about-me__eng-name">Vicky Tsai</p>
+          </div>
+          <div class="about-me__intro-wrapper">
+            <p class="about-me__intro-title">簡介</p>
+            <p class="about-me__intro-text">
+              擁有兩年的設計及行銷實務經驗，能夠有條理地進行多方溝通、配合不同單位一同完成專案；亦曾擔任售服專員、作為公司與客戶間的橋梁，了解並傾聽客戶的回饋，致力於提供更貼近使用者需求的體驗。主動、善於溝通、充滿好奇心、樂於接受新想法以及自主學習，是我準備好迎接不同挑戰的關鍵能力！
+            </p>
+          </div>
+
+          <div class="about-me__divider"></div>
+          <div class="about-me__skills-wrapper">
+            <p class="about-me__skill-title">專業能力</p>
+            <div class="about-me__category-wrapper">
+              <div class="about-me__design">
+                <p class="about-me__skill-category">設計工具</p>
+                <div class="about-me__tools-wrapper">
+                  <div class="about-me__skill-type">
+                    <p class="about-me__type">平面設計</p>
+                    <ul class="about-me__list">
+                      <li class="about-me__list-item">Adobe Illustrator</li>
+                      <li class="about-me__list-item">Adobe Photoshop</li>
+                      <li class="about-me__list-item">Adobe InDesign</li>
+                    </ul>
+                  </div>
+                  <div class="about-me__skill-type">
+                    <p class="about-me__type">網頁設計</p>
+                    <ul class="about-me__list">
+                      <li class="about-me__list-item">HTML</li>
+                      <li class="about-me__list-item">CSS</li>
+                      <li class="about-me__list-item">JavaScript</li>
+                      <li class="about-me__list-item">React</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="about-me__project">
+                <p class="about-me__skill-category">專案管理</p>
+                <ul class="about-me__list">
+                  <li class="about-me__list-item">專案時程控管</li>
+                  <li class="about-me__list-item">回饋進度報告</li>
+                  <li class="about-me__list-item">跨部門協作</li>
+                  <li class="about-me__list-item">檔案管理</li>
+                  <li class="about-me__list-item">結案檢討及改進</li>
+                </ul>
+              </div>
+              <div class="about-me__language">
+                <p class="about-me__skill-category">語言</p>
+                <ul class="about-me__list">
+                  <li class="about-me__list-item">英文 TOEIC 805分</li>
+                  <li class="about-me__list-item">中文 精通</li>
+                  <li class="about-me__list-item">台語 中等</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="about-me__divider"></div>
+          <div class="about-me__other-wrapper">
+            <div class="about-me__education-wrapper">
+              <p class="about-me__other-title">學歷</p>
+              <p class="about-me__other-text">
+                國立臺中教育大學 數位內容科技學系
+              </p>
+            </div>
+
+            <div class="about-me__contact-wrapper">
+              <p class="about-me__other-title">聯絡方式</p>
+
+              <ul class="about-me__list">
+                <li class="about-me__list-item">vickytsai.0327@gmail.com</li>
+                <li class="about-me__list-item">0905-887-787</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="about-me__img-wrapper">
+          <img src="./assets/images/about-me_portrait.jpg" alt="照片" />
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer__content-wrapper">
+        <p>All rights reserved &copy; 2025</p>
+        ｜
+        <p>Vicky Tsai</p>
+      </div>
+    </footer>
+    <script type="module" src="./assets/js/menuControl.js"></script>
+    <script type="module" src="./assets/js/videoController.js"></script>
+    <script type="module" src="./assets/js/cardSlider.js"></script>
+    <script type="module" src="./assets/js/scrollingAnimation.js"></script>
+    <script type="module" src="./assets/js/switchImg.js"></script>
+    <script type="module" src="./assets/js/switchFilter.js"></script>
+  </body>
+</html>
