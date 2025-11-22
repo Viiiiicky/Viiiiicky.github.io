@@ -102,6 +102,8 @@ h3 {
 .go-top {
   position: fixed;
   z-index: 2000;
+  left: auto;
+  top: auto;
   right: clamp(2rem, 4vw, 8rem);
   bottom: clamp(2rem, 4vw, 8rem);
 
