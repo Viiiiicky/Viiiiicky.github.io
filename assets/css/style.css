@@ -1126,7 +1126,7 @@ a.logo-link {
   row-gap: 0.5rem;
 
   padding-bottom: 1.5rem;
-  border-bottom: 2px dotted var(--color-medium-gray);
+  border-bottom: 1px dotted var(--color-medium-gray);
 }
 
 @media screen and (min-width: 62.5em) {
@@ -1157,6 +1157,8 @@ a.logo-link {
 .work-experience__duration {
   font-size: 1.2rem;
   font-weight: 300;
+
+  white-space: nowrap;
 }
 
 .work-experience__job-description {
@@ -1202,7 +1204,7 @@ a.logo-link {
   flex-direction: column;
   /* justify-content: space-between; */
   row-gap: 2.5rem;
-  column-gap: 2.5rem;
+  /* column-gap: 2.5rem; */
 
   width: 100%;
   min-height: calc(100vh - 6rem);
@@ -1284,32 +1286,6 @@ a.logo-link {
   font-weight: 400;
 }
 
-.about-me__other-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 4rem;
-  row-gap: 4rem;
-}
-
-.about-me__education-wrapper,
-.about-me__contact-wrapper {
-  display: flex;
-  flex-direction: column;
-  row-gap: 1rem;
-}
-
-.about-me__other-title {
-  font-size: 1.8rem;
-  font-weight: 600;
-
-  color: var(--color-dark-gold);
-}
-
-.about-me__other-text {
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
 .about-me__skills-wrapper {
   display: flex;
   flex-direction: column;
@@ -1370,14 +1346,34 @@ a.logo-link {
   font-weight: 300;
 
   line-height: 2.1rem;
+  white-space: nowrap;
 }
 
-.about-me__project {
+.about-me__other-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 4rem;
+  row-gap: 2.5rem;
 }
 
-.about-me__language {
+.about-me__education-wrapper,
+.about-me__contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
+.about-me__other-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  color: var(--color-dark-gold);
+}
+
+.about-me__other-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
 .about-me__img-wrapper {
   flex-grow: 1;
 
@@ -1415,4 +1411,8 @@ footer {
   /* padding: 0 1.5rem; */
 
   font-size: 1.4rem;
+}
+
+.footer__content-wrapper a {
+  color: var(--color-medium-gray);
 }
