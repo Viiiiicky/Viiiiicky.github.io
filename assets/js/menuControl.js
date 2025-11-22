@@ -1,7 +1,10 @@
 const navbar = document.querySelector(".navbar");
 const menuButton = document.querySelector(".menu-list-item");
 const innerList = document.querySelector(".inner-list-wrapper");
-const innerLinks = innerList.querySelectorAll(".navbar__list-link");
+
+const closingLinks = document.querySelectorAll(
+  ".logo-link, .inner-list-wrapper .navbar__list-link"
+);
 
 const menuImg = document.querySelector(".navbar__menu-icon");
 const closeImg = document.querySelector(".navbar__close-icon");
@@ -40,7 +43,7 @@ menuButton.addEventListener("click", (event) => {
 });
 
 // 點擊選單內選項後關閉選單
-innerLinks.forEach((link) => {
+closingLinks.forEach((link) => {
   link.addEventListener("click", () => {
     toggleMenu(false);
   });

@@ -98,6 +98,23 @@ h3 {
   }
 }
 
+/* ========= 回到頂端按鈕 樣式設定 ========= */
+.go-top {
+  position: fixed;
+  z-index: 2000;
+  right: clamp(2rem, 4vw, 8rem);
+  bottom: clamp(2rem, 4vw, 8rem);
+
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 50%;
+
+  opacity: 0.6;
+  border: 1px solid var(--color-semi-dark-gray);
+  background-color: var(--color-white);
+}
+
 /* ========= 標題浮出動畫 樣式設定 ========= */
 
 .fade-in {
@@ -583,6 +600,7 @@ a.logo-link {
 .graphic-works__button {
   width: 2rem;
   height: 2rem;
+  background-color: transparent;
 }
 
 .graphic-works__wrapper {
