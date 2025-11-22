@@ -1157,8 +1157,11 @@ a.logo-link {
 .work-experience__duration {
   font-size: 1.2rem;
   font-weight: 300;
+}
 
+.no-break-text {
   white-space: nowrap;
+  display: inline-block;
 }
 
 .work-experience__job-description {
