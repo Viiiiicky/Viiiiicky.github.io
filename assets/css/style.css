@@ -1159,11 +1159,6 @@ a.logo-link {
   font-weight: 300;
 }
 
-.no-break-text {
-  white-space: nowrap;
-  display: inline-block;
-}
-
 .work-experience__job-description {
   flex-grow: 1;
   color: var(--color-semi-dark-gray);
