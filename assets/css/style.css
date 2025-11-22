@@ -1374,6 +1374,11 @@ a.logo-link {
   font-size: 1.4rem;
   font-weight: 400;
 }
+
+.about-me__contact-wrapper .about-me__list-item {
+  font-weight: 400;
+}
+
 .about-me__img-wrapper {
   flex-grow: 1;
 
