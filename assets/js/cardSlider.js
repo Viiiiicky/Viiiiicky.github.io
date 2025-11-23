@@ -12,7 +12,7 @@ const indicatorsWrapper = document.querySelector(
 );
 const indicators = Array.from(indicatorsWrapper.children);
 
-const mediaQuery = window.matchMedia("(min-width: 62.5em)");
+const mediaQuery = window.matchMedia("(min-width: 75em)");
 
 // 預設索引值為第一張
 let currentIndex = 0;

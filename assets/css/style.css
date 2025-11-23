@@ -37,6 +37,9 @@ body {
   width: 100%;
   max-width: 100%;
   min-height: 100vh;
+  /* 
+  margin-left: auto;
+  margin-right: auto; */
   font-family: "Roboto", "Noto Sans TC", sans-serif;
 }
 
@@ -574,7 +577,7 @@ a.logo-link {
   margin: 1.5rem auto;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 75em) {
   .graphic-works__arrows-wrapper {
     justify-content: flex-end;
   }
@@ -604,7 +607,7 @@ a.logo-link {
   min-height: 60vh;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 75em) {
   .graphic-works__card-wrapper {
     flex-basis: 50vw;
 
@@ -640,13 +643,13 @@ a.logo-link {
   border-radius: 2rem;
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 75em) {
   .graphic-works__info {
     padding: 3rem 2rem;
   }
 }
 
-@media screen and (min-width: 62.5em) {
+@media screen and (min-width: 75em) {
   .graphic-works__work,
   .graphic-works__info {
     flex-basis: 50%;
