@@ -9,7 +9,7 @@ const closingLinks = document.querySelectorAll(
 const menuImg = document.querySelector(".navbar__menu-icon");
 const closeImg = document.querySelector(".navbar__close-icon");
 
-const mediaQuery = window.matchMedia("(min-width: 62.5em)");
+const mediaQuery = window.matchMedia("(min-width: 75em)");
 
 function toggleMenu(shouldOpen) {
   if (mediaQuery.matches) return;

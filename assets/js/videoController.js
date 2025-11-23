@@ -2,7 +2,7 @@ const webWorks = document.querySelectorAll(".web-works__link");
 const videos = document.querySelectorAll(".web-works__teaser");
 const thumbnails = document.querySelectorAll(".web-works__thumbnail");
 
-const mediaQuery = window.matchMedia("(min-width: 62.5em)");
+const mediaQuery = window.matchMedia("(min-width: 75em)");
 
 function handleMouseEnter(index) {
   // 小螢幕時不執行
