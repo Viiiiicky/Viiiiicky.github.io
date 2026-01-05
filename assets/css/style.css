@@ -324,6 +324,7 @@ a.logo-link {
   align-items: flex-start;
   row-gap: 1.5rem;
 
+  margin-bottom: 3rem;
   /* text-shadow: 1px 1px 3px var(--color-raven); */
 }
 
@@ -353,8 +354,7 @@ a.logo-link {
   column-gap: 3rem;
 
   margin-top: auto;
-
-  transition-delay: 0.5s;
+  margin-bottom: 5vh;
 }
 
 @media screen and (min-width: 75em) {
@@ -362,6 +362,7 @@ a.logo-link {
     align-self: flex-start;
 
     margin-bottom: clamp(3rem, 10vh, 10vh);
+    transition-delay: 0.5s;
   }
 }
 
